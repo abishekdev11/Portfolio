@@ -14,8 +14,8 @@ const projects = [
   {
     title: "Portfolio Website",
     desc: "Animated developer portfolio built with React.js and Tailwind",
-    github: "https://github.com/yourusername/portfolio",
-    live: "https://your-portfolio.vercel.app",
+    github: "https://github.com/abishekdev11/Portfolio",
+    live: "https://portfolio-shek.vercel.app",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function Projects() {
                 target="_blank"
                 className="px-4 py-2 text-sm rounded-lg bg-cyan-500 hover:bg-cyan-600 transition"
               >
-                Live Demo
+                View
               </a>
             </div>
           </div>
