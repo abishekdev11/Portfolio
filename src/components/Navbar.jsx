@@ -1,8 +1,20 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <motion.nav
@@ -12,10 +24,8 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center px-8 py-4">
 
-        {/* Logo */}
         <h1 className="font-bold text-xl">FULLSTACK Dev</h1>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 text-sm">
           {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
             <a
@@ -29,7 +39,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Hamburger Button (Mobile) */}
         <button
           className="md:hidden text-2xl"
           onClick={() => setOpen(!open)}
@@ -38,21 +47,30 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden flex flex-col items-center gap-4 pb-4 bg-black/30 backdrop-blur-md">
-          {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              onClick={() => setOpen(false)}
-              className="text-sm"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-      )}
+      {/* Animated Mobile Menu */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            ref={menuRef}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}   // 👈 CLOSE ANIMATION (UPWARDS)
+            transition={{ duration: 0.25 }}
+            className="md:hidden flex flex-col items-center gap-4 pb-4 bg-black/30 backdrop-blur-md"
+          >
+            {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                onClick={() => setOpen(false)}
+                className="text-sm"
+              >
+                {item}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
