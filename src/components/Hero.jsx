@@ -32,17 +32,17 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mt-8">
-          
-          {/* GitHub */}
+
+          {/* Resume */}
           <a
-            href="https://github.com/abishekdev11"
+            href="/resume.pdf"
             target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 border border-gray-700 hover:border-cyan-400 hover:scale-105 transition-all duration-300 shadow-lg"
+            className="px-6 py-3 rounded-full border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black hover:scale-105 transition-all duration-300 shadow-lg"
           >
-            <FaGithub size={20} />
-            GitHub
+            Resume
           </a>
+          
+          
 
           {/* LinkedIn */}
           <a
@@ -55,6 +55,17 @@ export default function Hero() {
             LinkedIn
           </a>
 
+          {/* GitHub */}
+          <a
+            href="https://github.com/abishekdev11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 border border-gray-700 hover:border-cyan-400 hover:scale-105 transition-all duration-300 shadow-lg"
+          >
+            <FaGithub size={20} />
+            GitHub
+          </a>
+
           {/* Projects */}
           {/* <a
             href="#projects"
@@ -63,14 +74,7 @@ export default function Hero() {
             View Projects
           </a> */}
 
-          {/* Resume */}
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            className="px-6 py-3 rounded-full border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black hover:scale-105 transition-all duration-300 shadow-lg"
-          >
-            Resume
-          </a>
+          
         </div>
       </motion.div>
 
