@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden px-4 py-12 md:py-0"
+      className="relative min-h-screen flex items-center overflow-hidden px-4 py-20 md:py-0"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-purple-600/20 to-pink-500/20 blur-3xl animate-pulse"></div>
@@ -112,7 +112,7 @@ export default function Hero() {
           <img
             src="/profile.jpg"
             alt="Abishek"
-            className="w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-cyan-400 shadow-2xl shadow-cyan-400/30"
+            className="w-78 h-72 md:w-96 md:h-96 rounded-full object-cover object-top border-4 border-cyan-400 shadow-2xl shadow-cyan-400/30"
           />
         </motion.div>
       </div>
