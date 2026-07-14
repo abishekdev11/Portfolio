@@ -112,7 +112,7 @@ export default function Hero() {
           <img
             src="/profile.jpg"
             alt="Abishek"
-            className="w-78 h-72 md:w-96 md:h-96 rounded-full object-cover object-top border-4 border-cyan-400 shadow-2xl shadow-cyan-400/30"
+            className="w-78 h-72 md:w-96 md:h-96 rounded-full object-cover object-bottom border-4 border-cyan-400 shadow-2xl shadow-cyan-400/30"
           />
         </motion.div>
       </div>
