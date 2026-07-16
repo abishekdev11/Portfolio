@@ -3,7 +3,7 @@ const internships = [
     title: "Python Full Stack Developer course 2025",
     desc: "Completed Pytthon Fullstack Developer course in Career Ladder institution, sundarapuram, coimbatore",
     tools: "Covered Teckstack : React.js, Django, My SQL, Tailwindcss, Bootstrap",
-    live: "/course_certificate.pdf",
+    live: "https://drive.google.com/file/d/15Q-iy8YnpqMAZTzA9tzOh_bZzphRly2F/view?usp=sharing",
   },
   {
     title: "MERN stack Developer Internship 2026",
