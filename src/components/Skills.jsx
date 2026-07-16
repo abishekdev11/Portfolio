@@ -3,19 +3,22 @@ import {
   FaNodeJs,
   FaDatabase,
   FaLock,
-  FaPython
+  FaPython,
+  FaBootstrap
 } from "react-icons/fa";
 
 import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
 
 const skills = [
-  { name: "React", icon: <FaReact className="text-cyan-400" /> },
+  { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
   { name: "Django", icon: <FaPython className="text-gray-400" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-  { name: "Express", icon: <SiExpress className="text-gray-300" /> },
+  { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
   { name: "MYSQL",    icon: <FaDatabase className="text-yellow-400" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },  
-  { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },  
+  { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
+  { name: "Bootstrap", icon: <FaBootstrap className="text-sky-400" /> },  
+  
   // { name: "JWT", icon: <FaLock className="text-yellow-400" /> },
 ];
 
