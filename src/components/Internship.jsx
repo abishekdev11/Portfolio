@@ -9,7 +9,7 @@ const internships = [
     title: "MERN stack Developer Internship 2026",
     desc: "Completed Mern stack developer Internship and worked in real time projects in Eethal-Nad IT solution, eachanari, coimbatore",
     tools: "Covered Teckstack : React.js, Node.js, Express.js, MongoDB, Tailwindcss, Bootstrap",
-    live: "https://your-chat-app.vercel.app",
+    live: "https://drive.google.com/file/d/15Q-iy8YnpqMAZTzA9tzOh_bZzphRly2F/view?usp=sharing",
   }
   
 ];
