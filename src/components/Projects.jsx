@@ -1,15 +1,15 @@
 const projects = [
   {
-    title: "E-Commerce App",
-    desc: "Full MERN stack shopping platform with authentication and cart system",
-    github: "https://github.com/yourusername/ecommerce",
-    live: "https://your-ecommerce-app.vercel.app",
+    title: "Agentic-AI HRM",
+    desc: "Full MERN stack HRM software with Agenti-AI and chatbot",
+    github: "https://github.com/abishekdev11/HRM-AI",
+    live: "https://hrm-ai-project.vercel.app/",
   },
   {
     title: "E.com website",
     desc: "Real-time e.com web application using React.js and Django",
-    github: "https://github.com/yourusername/chat-app",
-    live: "https://your-chat-app.vercel.app",
+    github: "https://github.com/abishekdev11/py_fullsack",
+    live: "https://hrm-ai-project.vercel.app/",
   },
   {
     title: "Portfolio Website",
