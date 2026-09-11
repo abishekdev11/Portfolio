@@ -7,7 +7,7 @@ import {
   FaBootstrap
 } from "react-icons/fa";
 
-import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiLangchain, SiLlvm, SiMongodb, SiOllama, SiTailwindcss } from "react-icons/si";
 
 const skills = [
   { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
@@ -17,7 +17,12 @@ const skills = [
   { name: "MYSQL",    icon: <FaDatabase className="text-yellow-400" /> },
   { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },  
   { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
-  { name: "Bootstrap", icon: <FaBootstrap className="text-sky-400" /> },  
+  { name: "Bootstrap", icon: <FaBootstrap className="text-sky-400" /> }, 
+  { name: "Langchain", icon: <SiLangchain className="text-sky-400" /> },
+  { name: "RAG"},
+  { name: "LLM" }, 
+ 
+
   
   // { name: "JWT", icon: <FaLock className="text-yellow-400" /> },
 ];
