@@ -37,7 +37,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-8">
             <a
-              href="https://drive.google.com/file/d/1FbzzLD0xXHZJJM17yr3vOqYZuO-xJKql/view?usp=sharing"
+              href="https://drive.google.com/file/d/12XV11y__xFG3b2e1DsHHhZvetKtuf6W2/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-full border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black hover:scale-105 transition-all duration-300 shadow-lg"
